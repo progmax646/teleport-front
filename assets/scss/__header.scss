@@ -1,0 +1,29 @@
+.header {
+  min-height: 64px;
+  height: 100%;
+  width: 100%;
+  background-color: #202538;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 30px;
+  &__location {
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+    .el-dropdown {
+      span {
+        color: #FFFFFF;
+      }
+    }
+  }
+  &__avatar {
+    display: flex;
+    align-items: center;
+    span {
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: .8rem;
+      padding-right: 16px;
+    }
+  }
+}

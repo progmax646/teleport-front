@@ -1,0 +1,59 @@
+.nav {
+  flex-direction: column;
+  position: fixed;
+  flex-wrap: nowrap;
+  left: 0;
+  top: 0;
+  max-width: 354px;
+  width: 100%;
+  padding: 43px 30px;
+  background: $purple;
+  height: 100%;
+  overflow: auto;
+  z-index: 999;
+  &-logo {
+    padding-bottom: 54px;
+  }
+  &-inner {
+    position: relative;
+    height: 100%;
+    .balance {
+      padding: 7px 9px;
+      background: #3C2D47;
+      border-radius: 4px;
+      margin-left: 10px;
+      span {
+        z-index: 1;
+        color: #FD3162;
+      }
+    }
+    .actions {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+    ul {
+      li {
+        padding: 16px 12px;
+        display: flex;
+        align-items: center;
+        transition: all .3s;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover {
+          background: #0057FF;
+          border-radius: 4px;
+        }
+
+        i {
+          margin-right: 20px;
+        }
+        a {
+          color: #FFFFFF;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

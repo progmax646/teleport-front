@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+.route-enter-active, .route-leave-active {
+  transition: opacity .2s;
+}
+
+.route-enter, .route-leave-active {
+  opacity: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  padding-bottom: 14px;
+}
+
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 54px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 2.2rem;
+  padding-bottom: 24px;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-weight: 400;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+a {
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+path, ellipse, circle, svg, rect, line {
+  transition: all 0.3s;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+:hover {
+  path, ellipse, circle {
+    // stroke: @color_yellow;
+    //fill: @color_yellow
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  padding: 0;
+  outline: none !important;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  &:active {
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave {
+  opacity: 0;
+}
+
+@media (min-width: 1424px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  font-family: $font-sf-pro;
+  .body-part {
+    width: 100%;
+    padding-left: 354px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+.page {
+  .dropdown .dropdown-menu {
+    background: #FFFFFF;
+    border: 1px solid #EBEDF3;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 10px 9px -1px rgba(50, 50, 71, 0.05);
+    border-radius: 4px;
+
+    li {
+      a {
+        padding: 8px 10px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #91A1B9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #91A1B9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #91A1B9;
+}
+
+
+// font-face
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/static/fonts/Sf_pro_display.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
