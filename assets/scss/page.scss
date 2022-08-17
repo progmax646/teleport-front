@@ -1,0 +1,60 @@
+.page {
+  padding: 0 30px 0 45px;
+
+  &-head {
+    p {
+      color: $text-grey-color;
+      padding-bottom: 20px;
+    }
+  }
+
+  .folder-carousel {
+    &__item {
+      min-width: 155px;
+      width: 100%;
+      background-color: #242A43;
+      border-radius: 4px;
+      padding: 8px;
+      cursor: pointer;
+      &:hover {
+        background: #103D9B;
+        .icon {
+          i {
+            svg {
+              .path-head-folder-icon {
+                fill: #B2C1DF;
+              }
+              path {
+                fill:#B2C1DF;
+              }
+            }
+          }
+        }
+      }
+      span {
+        padding: 5px;
+        color: #578FFC;
+        background-color: #2B3455;
+        display: block;
+        border-radius: 4px;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 18px;
+      }
+      p {
+        padding-bottom: 20px;
+        font-size: .8rem;
+        text-align: center;
+      }
+    }
+    .slick-arrow {
+      &.slick-prev {
+        display: none !important;
+      }
+    }
+  }
+}

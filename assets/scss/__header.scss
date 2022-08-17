@@ -1,11 +1,13 @@
 .header {
   min-height: 64px;
-  height: 100%;
   width: 100%;
   background-color: #202538;
   display: flex;
   justify-content: flex-end;
-  padding: 0 30px;
+  position: fixed;
+  right: 0;
+  padding-right: 30px;
+  border-bottom: 1px solid #364164;
   &__location {
     display: flex;
     align-items: center;

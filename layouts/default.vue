@@ -3,7 +3,9 @@
     <Sidebar/>
     <div class="body-part">
       <Header/>
-      <Nuxt />
+      <div class="body-inner">
+        <Nuxt />
+      </div>
     </div>
   </div>
 </template>

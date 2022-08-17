@@ -5,6 +5,7 @@
   left: 0;
   top: 0;
   max-width: 354px;
+  min-height: 700px;
   width: 100%;
   padding: 43px 30px;
   background: $purple;
@@ -41,6 +42,8 @@
         transition: all .3s;
         cursor: pointer;
         border-radius: 4px;
+        color: #FFFFFF;
+        font-weight: 500;
         &:hover {
           background: #0057FF;
           border-radius: 4px;

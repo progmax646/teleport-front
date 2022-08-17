@@ -24,11 +24,13 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
       '@/assets/scss/main.scss',
+      '@/static/fonts/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '@/plugins/element-ui', ssr: true}
+    {src: '@/plugins/element-ui', ssr: true},
+    {src: '@/plugins/slick-carousel', ssr: false},
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
