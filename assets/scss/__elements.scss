@@ -15,6 +15,9 @@
   }
 }
 .slick-slider {
+  .slick-track {
+    margin-left: 0;
+  }
   .slick-slide {
     width: auto !important;
     margin-right: 20px;
@@ -33,6 +36,57 @@
       }
       &:before {
         display: none;
+      }
+    }
+  }
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  outline: none;
+  border: none;
+  transition: all .3s;
+  line-height: 46px;
+  min-width: 234px;
+  width: 100%;
+  border-radius: 4px;
+
+  &.btn-red {
+    background-color: $red;
+    color: #FFFFFF;
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
+    i {
+      margin-right: 8px;
+    }
+  }
+  &.btn-transparent {
+    background-color: transparent;
+    color: $blue;
+    border: 1px solid $blue;
+    i {
+      margin-right: 8px;
+      svg {
+        stroke: $blue;
+      }
+    }
+    &:hover {
+      background-color: $blue;
+      color: #FFFFFF;
+      i {
+        margin-right: 8px;
+        svg {
+          stroke: #FFFFFF;
+        }
+      }
+    }
+    i {
+      svg {
+        stroke: $blue;
       }
     }
   }
